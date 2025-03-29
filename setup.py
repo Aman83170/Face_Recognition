@@ -10,11 +10,15 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'face_recognition_models>=0.3.0',
+    'face_recognition_models',
     'Click>=6.0',
-    'dlib>=19.7',
+    'dlib>=19.3.0',
     'numpy',
+HEAD
     'Pillow'
+
+    'scipy'
+51acc6e (pre-release fixes)
 ]
 
 test_requirements = [
@@ -25,6 +29,11 @@ test_requirements = [
 setup(
     name='face_recognition',
     version='1.4.0',
+
+ d8bce10 (tweaks)
+
+    version='0.1.3',
+13a31cf (Replace local models with a call to face_recognition_models)
     description="Recognize faces from Python or from the command line",
     long_description=readme + '\n\n' + history,
     author="Adam Geitgey",
